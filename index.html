@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugatti Chiron Super Sport 300+</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pagepiling.js/dist/jquery.pagepiling.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        .specification-items {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px; 
+        }
+
+        .specification-item {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .specification-item img {
+            width: 150px; 
+            height: 100px; 
+            margin-bottom: 10px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        
+        .animated-section {
+            background: linear-gradient(45deg, red, white);
+            background-size: 400% 400%;
+            animation: gradientAnimation 3s ease infinite;
+        }
+
+       
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pagepiling.js/dist/jquery.pagepiling.min.js"></script>
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    
+    <div id="logo-video-container">
+        <video id="logo-video" autoplay muted>
+            <source src="C:\Users\srohi\OneDrive\Desktop\buggati\Buggati_logo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>               
+        <div class="text-overlay">
+            
+        </div>
+    </div>
+    
+    <div id="header" class="animated-section">
+        <h1>Bugatti Chiron Super Sport 300+</h1>
+    </div>
+
+   
+    <nav id="myMenu">
+        <ul>
+            <li data-menuanchor="home"><a href="#home">Home</a></li>
+            <li data-menuanchor="specifications"><a href="#specifications">Specifications</a></li>
+            <li data-menuanchor="gallery"><a href="#gallery">Gallery</a></li>
+            <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    
+    <div id="pagepiling">
+        
+        <div class="section" id="home">
+            <div class="main-section">
+                <video id="bg-video" autoplay loop muted>
+                    <source src="C:\Users\srohi\OneDrive\Desktop\buggati\Top Gear - Bugatti hits 304.77mph in a Chiron ｜ Top Gear.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="overlay"></div>
+                <div class="main-content">
+                    <p>The most powerful Bugatti ever built.</p>
+                </div>
+            </div>
+        </div>
+
+
+<div class="section" id="specifications" class="animated-section">
+    <div class="premium-section">
+        <h2>Specifications</h2>
+        <div class="specification-items">
+            <div class="specification-item">
+                <img src="1_spec.jpg" alt="Engine Image">
+                <p>Engine: 8.0L W16</p>
+            </div>
+            <div class="specification-item">
+                <img src="2_spec.jpg" alt="Power Image">
+                <p>Power: 1,500 hp</p>
+            </div>
+            <div class="specification-item">
+                <img src="3_spec.jpg" alt="Speed Image">
+                <p>Top Speed: 261 mph</p>
+            </div>
+            <div class="specification-item">
+                <img src="4_spec.jpg" alt="Acceleration Image">
+                <p>0-60 mph: 2.4 seconds</p>
+            </div>
+            <div class="specification-item">
+                <img src="5_spec.jpg" alt="Acceleration Image">
+                <p>0-100 mph: 6.1 seconds</p>
+            </div>
+            <div class="specification-item">
+                <img src="6_spec.png" alt="Acceleration Image">
+                <p>0-200 mph: 23.6 seconds</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section" id="gallery" class="animated-section">
+    <div class="premium-section">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="chiron1.jpeg" alt="Bugatti Chiron1">
+            <img src="chiron2.jpg" alt="Bugatti Chiron2">
+            <img src="chiron3.jpg" alt="Bugatti Chiron3">
+            <img src="chiron4.jpg" alt="Bugatti Chiron4">
+            <img src="chiron5.jpg" alt="Bugatti Chiron5">
+            <img src="chiron6.jpg" alt="Bugatti Chiron6">
+            <img src="chiron7.jpg" alt="Bugatti Chiron7">
+            <img src="chiron8.jpg" alt="Bugatti Chiron8">
+            <img src="chiron9.jpg" alt="Bugatti Chiron9">
+            <img src="chiron10.jpg" alt="Bugatti Chiron10">
+            <img src="chiron11.jpg" alt="Bugatti Chiron11">
+            <img src="chiron13.png" alt="Bugatti Chiron12">
+            
+        </div>
+    </div>
+</div>
+
+
+       
+        <div class="section" id="contact">
+            <div class="contact-section">
+                <h2>Contact</h2>
+                <img src="chiron12.png" alt="Bugatti Chiron" align="center">
+                <div class="form-container">
+                   
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
